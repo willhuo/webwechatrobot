@@ -1,0 +1,43 @@
+﻿@model WechatRobot.SDK.DTO.User
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div id="contentrow" class="row">
+        @if (ViewBag.IsLogin)
+        {
+            <img id="head-photo" src="data:image/png;base64,@Model.HeadImgBase64" />
+            <br />
+            <label>@Model.UserName</label>
+            <br />
+            <label>@Model.NickName</label>
+            <br />
+            <label>@Model.Signature</label>
+        }
+        else if (ViewBag.QRCodeFlag)
+        {
+            <img id="qrcode" src="data:image/png;base64,@ViewBag.QRCodeBase64" />
+            <br />
+            <label>请扫码登录</label>
+        }
+        else
+        {
+            <h2>@ViewBag.ErrorMsg</h2>
+        }
+    </div>
+</div>
+
+<script>
+    $(function () {
+        @if (ViewBag.IsLogin == false)
+        {
+            @:window.setInterval(GetLoginFlag, 5000);
+        }
+    });
+</script>
+
+<link href="~/css/wechat/index.css" rel="stylesheet" />
+<script src="~/js/wechat/index.js"></script>

@@ -1,0 +1,17 @@
+﻿#head-photo {
+    width: 270px;
+    height: 270px;
+}
+
+#qrcode {
+    width: 400px;
+    height: 400px;
+}
+
+.container {
+    margin-top:100px;
+}
+
+.row {
+    text-align: center;    
+}

@@ -1,0 +1,24 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/WechatRoboot/.vs/WechatRobot
+*/bin
+*/obj
+/WechatRoboot/WechatRobot.Web/bin
+/WechatRoboot/WechatRobot.Web/obj
+/WechatRoboot/UnitTestProject/bin/Debug/netcoreapp2.1
+/WechatRoboot/UnitTestProject/obj
+/WechatRoboot/WechatRobot/obj/Debug
+/WechatRoboot/WechatRobot.BusinessLogic/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.BusinessLogic/obj
+/WechatRoboot/WechatRobot.Common/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.Common/obj
+/WechatRoboot/WechatRobot.Controllers/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.Controllers/obj
+/WechatRoboot/WechatRobot.DataAccess/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.DataAccess/obj
+/WechatRoboot/WechatRobot.SDK/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.SDK/obj
+/WechatRoboot/WechatRobot.Model/bin/Debug/netstandard2.0
+/WechatRoboot/WechatRobot.Model/obj
